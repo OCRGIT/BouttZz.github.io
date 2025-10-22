@@ -1,11 +1,7 @@
-const btn  = document.getElementById('menuBtn');
-const menu = document.getElementById('dropMenu');
-
-btn.addEventListener('click', () => {
-  menu.classList.toggle('drop-hidden');
-});
-
-// cierra al hacer clic fuera
-document.addEventListener('click', (e) => {
-  if (!e.target.matches('#menuBtn')) menu.classList.add('drop-hidden');
-});
+function mostrarCat(cat){
+  // más adelante aquí filtraremos productos
+  console.log('Filtrar por: '+cat);
+  // por ahora solo scroll suave a la sección
+  const destino = document.getElementById(cat) || document.getElementById('catalogo');
+  destino?.scrollIntoView({behavior:'smooth'});
+}
