@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": "nk-air-001",
+    "name": "Nike Air Max 90",
+    "price": 2800,
+    "size": ["25", "25.5", "26", "26.5", "27"],
+    "img": "nike.jpg",
+    "category": "sneakers"
+  },
+  {
+    "id": "mochila-002",
+    "name": "Backpack Urban 25 L",
+    "price": 950,
+    "size": ["Única"],
+    "img": "mochila.jpg",
+    "category": "backpacks"
+  },
+  {
+    "id": "play-003",
+    "name": "Playera Dry-Fit Negra",
+    "price": 450,
+    "size": ["S", "M", "L", "XL"],
+    "img": "playera.jpg",
+    "category": "streetwear"
+  }
+]
