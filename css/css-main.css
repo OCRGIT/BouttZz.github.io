@@ -44,10 +44,11 @@ header img{ height:60px; }
 }
 /* Botón flotante carrito */
 .flotante-carrito{
-  position:fixed;
-  bottom:20px;
-  left:50%;
-  transform:translateX(-50%);
+  position:relative;          /* dentro del flujo, no fixed */
+  margin:1rem auto 2rem;      /* centrado y espacio abajo */
+  display:flex;
+  align-items:center;
+  gap:.4rem;
   background:var(--azul-logo);
   color:#111;
   border:none;
@@ -56,10 +57,5 @@ header img{ height:60px; }
   font-weight:bold;
   border-radius:var(--radio);
   cursor:pointer;
-  box-shadow:0 4px 10px rgba(0,0,0,.4);
-  z-index:1000;
-  display:flex;
-  align-items:center;
-  gap:.4rem;
 }
 .flotante-carrito:hover{ filter:brightness(1.1); }
